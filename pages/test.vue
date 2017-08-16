@@ -1,13 +1,8 @@
 <template>
   <div>
-    test
+    <p>
+      <button @click="$store.commit('increment')">{{ $store.state.counter }}</button><br>
+      <nuxt-link to="/">Home</nuxt-link>
+    </p>
   </div>
 </template>
-<script>
-  export default {
-
-  }
-</script>
-<style>
-
-</style>
